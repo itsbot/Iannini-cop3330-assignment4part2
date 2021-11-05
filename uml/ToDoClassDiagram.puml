@@ -1,0 +1,39 @@
+@startuml
+class ToDoMain {
+File: Data
+main()
+start()
+}
+
+class Controller {
+GUI input
+}
+
+class Menu {
+fetchData()
+newList()
+deleteList()
+editList()
+}
+
+class List {
+createList()
+deleteList()
+editList()
+}
+
+class Task {
+appendItem()
+deleteItem()
+markItemComplete()
+changeDate()
+}
+ToDoMain -- Controller
+
+Task <-- List
+List <-- Menu
+
+Controller --> Task
+Controller --> List
+Controller --> Menu
+@enduml

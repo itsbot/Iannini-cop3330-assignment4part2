@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+ToDoMain.java -> ToDoMain.FXML: start()
+ToDoMain.FXML <-> Controller.java: GUI
+Controller.java <-> Menu.java
+Menu.java <-> List.java
+List.java <-> Task.java
+@enduml
