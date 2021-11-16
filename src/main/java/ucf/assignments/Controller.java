@@ -125,7 +125,7 @@ public class Controller {
         );
     }
 
-    //@FXML Button newTask;
+    //@FXML Button newTask; //
     @FXML TextField taskField;
     @FXML TextField dueDateField;
     @FXML
