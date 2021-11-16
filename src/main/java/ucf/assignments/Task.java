@@ -3,11 +3,46 @@
  *  Copyright 2021 Patrick Iannini
  */
 package ucf.assignments;
+import javafx.scene.control.CheckBox;
 
 public class Task {
-    // Options for what to do to a list item
-    void appendItem() {}
-    void deleteItem() {}
-    void markItemComplete() {}
-    void changeDate() {} // Should both tasks and items have due dates?
+    String task;
+    int dueDate;
+    boolean completed;
+
+    public Task(String task, int dueDate, boolean completed) {
+        this.task = task;
+        this.dueDate = dueDate;
+        this.completed = completed;
+    }
+    public Task(String task, int dueDate) {
+        this.task = task;
+        this.dueDate = dueDate;
+        //this.completed = new CheckBox();
+    }
+    public Task() {}
+
+    public String getTask() {
+        return task;
+    }
+
+    public void setTask(String task) {
+        this.task = task;
+    }
+
+    public int getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(int dueDate) {
+        this.dueDate = dueDate;
+    }
+
+    public boolean getCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
 }

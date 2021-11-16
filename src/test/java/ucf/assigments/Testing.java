@@ -1,9 +1,11 @@
 package ucf.assigments;
 import org.junit.jupiter.api.Test;
+import ucf.assignments.List;
 
 public class Testing {
     // Testing should use a different data file
     // Delete or clear file after testing
+
     @Test
     void addList() {
         // Add n list up to 100 & populate title

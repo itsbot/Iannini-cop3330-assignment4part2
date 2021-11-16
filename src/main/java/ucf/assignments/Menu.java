@@ -3,20 +3,9 @@
  *  Copyright 2021 Patrick Iannini
  */
 package ucf.assignments;
+import java.util.ArrayList;
 
 public class Menu {
-    // Options for user
-    /* Display all lists
-        Needs to load lists and items. JSON file or Database?
-        Menu could initially only display list titles then fetch items once list is clicked
-     */
-    void fetchData() {}
-    // Create list(Button click) -> List
-    void newList() {}
-    // Delete list -> List
-    void deleteList() {}
-    // View/Edit list -> List
-    void editList() {}
 
-    // filtering
+
 }
